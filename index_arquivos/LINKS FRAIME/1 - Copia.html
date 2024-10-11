@@ -11,7 +11,7 @@
 img {
     max-width: 100%;
 }
-</style><body bgcolor="#d0e4fe"></body>
+</style><body bgcolor="#000000"></body>
 <!---------------------------------
 <body bgcolor="linen"></body>
 <body bgcolor="#d0e4fe"></body>
@@ -30,15 +30,96 @@ img {
 <!--##############################################################################-->
 <!---------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------->
+<!---------------------FAIXA AZUL-- _blank --- _self -----
+<a href="../../index.html" target="_self">
+<div height="100" style="background-color: blue;line-height: 100px;text-align: center;"><p style="color: white"><FONT SIZE=+4>INÍCIO</FONT></p></div></a><hr/>
+<!----------------------------------------------------------->
+<!DOCTYPE html><html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1"><style>
+body {margin:0;}
+.navbar {
+  overflow: hidden;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.main {
+  padding: 0px;
+  margin-top: 30px;
+  height: 500px; /* Used in this example to enable scrolling */
+}
+</style></head><body><div class="navbar"><input type="text" id="myInput" onkeyup="myFunction()" placeholder="PESQUISA NESSA PÁGINA" title="PESQUISA NESSA PÁGINA"></div><div class="main"><!DOCTYPE html><html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1"><style>
+* {
+  box-sizing: border-box;
+}
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 5px solid red;
+  margin-bottom: 0px;
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#myUL li a {
+  border: 0px solid #000000;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #000000;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f0fc03;
+  display: block
+}
+#myUL li a:hover:not(.header) {
+  background-color: #111111;
+}
+</style></head><body><ul id="myUL"><BR/><BR/>
 <!------------------------------------------------------------------>
 <!------------------------------------------------------------------>
 <!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<center>
-<!------------RELOGIO NOVO RELÓGIO BOM--------------->
-<hr/><u><html><head><title></title></head><body><SCRIPT LANGUAGE="JAVASCRIPT">
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!------------------------------------ IMAGEM  400---------------------------------->
+<!---------------------------------------------------------------------------------->
+<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>
+img {
+  max-width: 100%;
+  height: auto;
+}
+</style></head><body>
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<FONT COLOR="#fffb00">
+<!---------------------------------------------------------------------------------->
+<!-----------------------RELOGIO NOVO RELÓGIO BOM------------------------>
+<center>Hoje é <u><html><head><title></title></head><body><SCRIPT LANGUAGE="JAVASCRIPT">
 <!--
 var now = new Date();
 var mName = now.getMonth() +1 ;
@@ -69,7 +150,7 @@ else {Year = yearNr;}
 var todaysDate =(" " + Day + ", " + dayNr + "/" + Month + "/" + Year);
 document.write('  '+todaysDate);
 //-->
-</SCRIPT><mark>
+</SCRIPT>
 <SPAN ID="Clock">00:00:00</SPAN>
 <SCRIPT LANGUAGE="JavaScript">
 <!--
@@ -92,261 +173,55 @@ document.write('  '+todaysDate);
     } 
     window.setInterval("Horario()",1000);
 //-->
-</SCRIPT></body></html></mark></u><HR/>
-<!--------------------------------------------------------------->
-
-<!----------------------------------------------------------->
-<SCRIPT LANGUAGE="JavaScript">
-<!-- Begin
-var day_of_week = new Array('<FONT COLOR="#FF0000">DOM</FONT>','Seg','Ter','Qua','Qui','Sex','<FONT COLOR="#0101DF">Sab</FONT>');
-var month_of_year = new Array('Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro');
-var Calendar = new Date();
-var year = Calendar.getYear();       // Retorna o ano
-var month = Calendar.getMonth();    // Retorna mes (0-11)
-var today = Calendar.getDate();     // Retorna dias (1-31)
-var weekday = Calendar.getDay();   // Retorna dias (1-31)
-var DAYS_OF_WEEK = 7;    // "constant" para o numero de dias na semana
-var DAYS_OF_MONTH = 31;    // "constant" para o numero de dias no mes
-var cal;    // Usado para imprimir na tela
-Calendar.setDate(1);    // Comecar o calendario no dia '1'
-Calendar.setMonth(month);    // Comecar o calendario com o mes atual
-var TR_start = '<TR>';
-var TR_end = '</TR>';
-var highlight_start = '<TD WIDTH="30"><TABLE CELLSPACING=0 BORDER=5 BGCOLOR=#40FF00 BORDERCOLOR=#FFFF00><TR><TD WIDTH=20><B><CENTER>';
-var highlight_end   = '</CENTER></TD></TR></TABLE></B>';
-var TD_start = '<TD WIDTH="30"><CENTER>';
-var TD_end = '</CENTER></TD>';
-cal =  '<TABLE BORDER=5 CELLSPACING=0 CELLPADDING=0 BORDERCOLOR=#FF00FF><TR><TD>';
-cal += '<TABLE BORDER=4 CELLSPACING=0 CELLPADDING=2>' + TR_start;
-cal += '<TD COLSPAN="' + DAYS_OF_WEEK + '" BGCOLOR="#2E64FE"><CENTER><B>';
-cal += month_of_year[month]  + '   ' + year + '</B>' + TD_end + TR_end;
-cal += TR_start;
-for(index=0; index < DAYS_OF_WEEK; index++)
-{
-if(weekday == index)
-cal += TD_start + '<B>' + day_of_week[index] + '</B>' + TD_end;
-else
-cal += TD_start + day_of_week[index] + TD_end;
-}
-cal += TD_end + TR_end;
-cal += TR_start;
-for(index=0; index < Calendar.getDay(); index++)
-cal += TD_start + '  ' + TD_end;
-for(index=0; index < DAYS_OF_MONTH; index++)
-{
-if( Calendar.getDate() > index )
-{
-  week_day =Calendar.getDay();
-  if(week_day == 0)
-  cal += TR_start;
-  if(week_day != DAYS_OF_WEEK)
-  {
-  var day  = Calendar.getDate();
-  if( today==Calendar.getDate() )
-  cal += highlight_start + day + highlight_end + TD_end;
-  else
-  cal += TD_start + day + TD_end;
-  }
-  if(week_day == DAYS_OF_WEEK)
-  cal += TR_end;
-  }
-  Calendar.setDate(Calendar.getDate()+1);
-}
-cal += '</TD></TR></TABLE></TABLE>';
-//  MOSTRAR CALENDARIO
-document.write(cal);
-//  End -->
-</SCRIPT>
-<!-------------------------------------------------------------->
-</center><HR/>
-<!-------------------------------------------------------------->
-<!---XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--->
-<!---#######################################  NOME  ##################################--->
-<!---XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX--->
-<!DOCTYPE html><html lang="pt"><head><title>Santos</title><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><style>
-* {
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
-}
-/* Style the header */
-.header {
-  background-color: linen;
-  padding: 20px;
-  text-align: center;
-}
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #000000;
-}
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 16px 18px;
-  text-decoration: none;
-}
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ffffff;
-  color: black;
-}
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 15px;
-}
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
-  .column {
-    width: 100%;
-  }
-}
-</style></head><body><div class="header">
-<!--##############################################################################-->
-<!--##############################################################################-->
-<!---------------------------------------------------------------------------------->
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+</SCRIPT></body></html></u></center>
 <!---------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------->
-<FONT SIZE=+4><b><center><X class="font-effect-emboss">
-SANTOS
-</X></center></b></FONT>
+<hr/><center>Ao abrir o vídeo <br/><b id='piscando' style="transition-duration:0.5s">
+ative o alto-falante 🔇🔈🔉🔊
+</b><script>
+var teste = 0;
+ setInterval(piscar, 500);
+ function piscar(){
+if(teste<1){
+teste++;
+document.getElementById('piscando').style.opacity = '1';
+} else{
+teste = 0; 
+document.getElementById('piscando').style.opacity = '0';
+}};
+</script></FONT></center>
 <!---------------------------------------------------------------------------------->
-<FONT SIZE=+2><b><center><X class="font-effect-emboss">
-BEM VINDOS
-</X></center></b></FONT>
-<!---------------------------------------------------------------------------------->
-<center><X class="font-effect-emboss">
-Deus seja louvado
-</X></center><hr/>  <h1>LISTA ONLINE</h1>
-  <p>Bem vindos</p>
-
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-</div><div class="topnav">
+<!----------------------------- _self ------ _blank ---------------->
 <!------------------------------------------------------------------>
 <!------------------------------------------------------------------>
 <!------------------------------------------------------------------>
+<li><a href="
+JAPONESAS
+/1 - Copia.html" target="_self">
+JAPONESAS
+</a></li>
 <!------------------------------------------------------------------>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
+<li><a href="
+NOME🔴
+/1 - Copia.html" target="_self">
+NOME🔴
+</a></li>
+<!------------------------------------------------------------------>
 
 
+
+
+<li><a href="
+NOME🔴
+/1 - Copia.html" target="_self">
+NOME🔴
+</a></li>
 <!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-</div><div class="row"><CENTER>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<div class="column"><h2>
-TESTE ALBUM
-</h2><p><iframe width="100%" height="650px" src="
-1 Play vários vídeos MENU LATERAL SETA - Copia.html
-" name="meu_iframe"></iframe></p></div>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<div class="column"><h2>
-MEUS SITES
-</h2><p><iframe width="100%" height="650px" src="
-https://jbmsantos0398.github.io/MEGA-SITES-EMBUTIDOS/
-" name="meu_iframe"></iframe></p></div>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<div class="column"><h2>
-NOMEDACOLUNA⚫
-</h2><p><iframe width="100%" height="650px" src="
-LINK.html⚫
-" name="meu_iframe"></iframe></p></div>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-</div>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<div class="row">
-<div class="column"><h2>
-NOMEDACOLUNA⚫
-</h2><p><iframe width="100%" height="650px" src="
-LINK.html⚫
-" name="meu_iframe"></iframe></p></div>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<div class="column"><h2>
-NOMEDACOLUNA⚫
-</h2><p><iframe width="100%" height="650px" src="
-LINK.html⚫
-" name="meu_iframe"></iframe></p></div>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<div class="column"><h2>
-NOMEDACOLUNA⚫
-</h2><p><iframe width="100%" height="650px" src="
-LINK.html⚫
-" name="meu_iframe"></iframe></p></div>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-</div>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<div class="row">
-<div class="column"><h2>
-NOMEDACOLUNA⚫
-</h2><p><iframe width="100%" height="650px" src="
-LINK.html⚫
-" name="meu_iframe"></iframe></p></div>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<div class="column"><h2>
-NOMEDACOLUNA⚫
-</h2><p><iframe width="100%" height="650px" src="
-LINK.html⚫
-" name="meu_iframe"></iframe></p></div>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<div class="column"><h2>
-NOMEDACOLUNA⚫
-</h2><p><iframe width="100%" height="650px" src="
-LINK.html⚫
-" name="meu_iframe"></iframe></p></div>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-</div>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
+<li><a href="
+NOME🔴
+/1 - Copia.html" target="_self">
+NOME🔴
+</a></li>
 <!------------------------------------------------------------------>
 
 
@@ -358,38 +233,6 @@ LINK.html⚫
 
 
 
-<!---------------------------  EXEMPLO  ---------------------------->
-
-<div class="row">
-<div class="column"><h2>
-NOMEDACOLUNA⚫
-</h2><p><iframe width="100%" height="650px" src="
-LINK.html⚫
-" name="meu_iframe"></iframe></p></div>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<div class="column"><h2>
-NOMEDACOLUNA⚫
-</h2><p><iframe width="100%" height="650px" src="
-LINK.html⚫
-" name="meu_iframe"></iframe></p></div>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<div class="column"><h2>
-NOMEDACOLUNA⚫
-</h2><p><iframe width="100%" height="650px" src="
-LINK.html⚫
-" name="meu_iframe"></iframe></p></div>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-</div>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-<!------------------------------------------------------------------>
-
 
 
 
@@ -399,11 +242,34 @@ LINK.html⚫
 
 
 <!------------------------------------------------------------------>
-</CENTER></body></html>
+<!------------------------------------------------------------------>
+<!------------------------------------------------------------------>
+<!------------------------------------------------------------------>
+<!------------------------------------------------------------------>
+<!------------------------------------------------------------------>
+</ul><script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script></body></html>
+<center>
 <!---------------------------------------------------------------------------------->
 <!--##############################################################################-->
 <!--##############################################################################-->
-<!--####################################   FIM   #################################-->
+<!--####################################   FIM   ################################-->
 <!--##############################################################################-->
 <!--##############################################################################-->
 <!---------------------------------------------------------------------------------->
@@ -459,7 +325,6 @@ LINK.html⚫
 </body></html>
 <!---------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------->
-<!---------------------------------------------------------------------------------->
 <!DOCTYPE html><html><meta name="viewport" content="width=device-width, initial-scale=1"><head><style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -482,39 +347,40 @@ hr.rounded {
   border-radius: 5px;
 }
 </style></head><body>
-<!----------------------------------------------
+<!-------------------------------------
 <hr class="dashed">
-
 <hr class="dotted">
-
 <hr class="solid">
-
 <hr class="rounded">
 -------------------------------------->
 </body></html>
 <!---------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------->
-<!---------------------------------------------------------------------------------->
 <!DOCTYPE html><html><meta name="viewport" content="width=device-width, initial-scale=1"><head><style>
 /* Red border */
 hr.new1 {
-  border-top: 3px solid #CCC;
+  border-top: 4px solid #CCC;
 }
 /* Dashed red border */
 hr.new2 {
-  border-top: 5px dashed red;
+  border-top: 3px dashed red;
 }
 /* Dotted red border */
 hr.new3 {
-  border-top: 5px dotted red;
+  border-top: 3px dotted red;
 }
 /* Thick red border */
 hr.new4 {
-  border: 3px solid #0008ff;
+  border: 3px solid #00ff1a;
 }
 /* Large rounded green border */
 hr.new5 {
-  border: 3px solid #00ff15;
+  border: 3px solid #0400ff;
+  border-radius: 5px;
+}
+/* Large rounded green border */
+hr.new6 {
+  border: 3px solid #ff1e00;
   border-radius: 5px;
 }
 </style></head><body>
@@ -524,15 +390,21 @@ hr.new5 {
 <hr class="new3">
 <hr class="new4">
 <hr class="new5">
+<hr class="new6">
 <!----------------------------------------------------------->
 </body></html>
+<!----------------------------------------------------------->
+<!-------------------------------EXEMPLO 3
+https://www.oocities.org/tutorialdhtml/a3.htm
+<!----------------------------------------------------------->
+<!----------------------------------------------------------->
 <!----------------------------------------------------------->
 <!----------------------------------------------------------->
 <!DOCTYPE html><html><head>
 <meta name="viewport" content="width=device-width, initial-scale=1"><style>
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 12px;
 }
 #myBtn {
   display: none;
@@ -579,41 +451,7 @@ function topFunction() {
 </script></body></html></div></body></html>
 <!---------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------->
-<!----------------------------------------------------------->
-<hr class="new1"><center>
-<!----------------------------------------------------------->
-<!DOCTYPE html><html><head><style>
-.pagination {
-  display: inline-block;
-}
-.pagination a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color .3s;
-  border: 3px solid #0000FF;
-  font-size: 22px;
-}
-.pagination a.active {
-  background-color: #01DF01;
-  color: white;
-  border: 3px solid #DF0101;
-}
-.pagination a:hover:not(.active) {background-color: #01DF01;}
-</style></head><body><div class="pagination">
-
-  <a href="index.html" class="active">&laquo;</a>
-  <a href="1 - Copia.html">1</a>
-  <a href="1 - Copia (2).html">2</a>
-  <a href="1 - Copia (3).html">3</a>
-  <a href="1 - Copia (4).html">&raquo;</a>
-
-</div></body></html>
-<!----------------------------------------------------------->
-<!----------------------------------------------------------->
-</center><hr class="new1"><br><br>
-<!----------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------->
 <!-------------------------------------RODAPÉ--------------------------------------->
 <!---------------------------------------------------------------------------------->
@@ -625,12 +463,16 @@ function topFunction() {
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: blue;
+   background-color: BLUE;
    color: white;
    text-align: center;
 }
 </style></head><body>
 
-<a href="../../index.html"><P><div class="footer"><FONT SIZE=+3><B>VOLTAR AO MENU</B></FONT></div></P></a>
+<a href="../../index.html"><P><div class="footer"><FONT SIZE=+3>VOLTAR AO MENU</FONT></div></P></a>
 
 </body></html> 
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
